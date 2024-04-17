@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банк</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-color-primary text-color-white tracking-wider">
+    <header>
+        <nav class="container flex justify-between items-center">
+            <div class="py-5 text-color-secondary font-bold text-3xl">
+                <a href="#home">
+                    <span class="text-color-white">Bank</span>Code.
+                </a>
+            </div>
+
+            <div>
+                <ul class="hidden lg:flex flex items-center space-x-6">
+                    <li><a href="#home" class="hover:text-color-secondary ease-in duration-200">Главная</a></li>
+                    <li><a href="#pricing" class="hover:text-color-secondary ease-in duration-200">Цены</a></li>
+                    <li><a href="#blog" class="hover:text-color-secondary ease-in duration-200">Блог</a></li>
+                    <li><a href="#contact" class="hover:text-color-secondary ease-in duration-200">Контакты</a></li>
+
+                    <li><button
+                            class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">Попробовать
+                            бесплатно</button></li>
+                </ul>
+            </div>
+
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center py-20">
+                    <li><a id="hLink" href="#home" class="hover:text-color-secondary ease-in duration-200">Главная</a>
+                    </li>
+                    <li><a id="hLink" href="#pricing" class="hover:text-color-secondary ease-in duration-200">Цены</a>
+                    </li>
+                    <li><a id="hLink" href="#blog" class="hover:text-color-secondary ease-in duration-200">Блог</a></li>
+                    <li><a id="hLink" href="#contact"
+                            class="hover:text-color-secondary ease-in duration-200">Контакты</a></li>
+
+                    <li><button class="btn">Попробовать бесплатно</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="home" class="relative">
+
+            <div class="blob1">
+            </div>
+
+            <div class="blob2">
+            </div>
+
+            <div class="container py-20">
+                <div class="flex flex-col items-center z-20 md:flex-row">
+                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                        <h1 class="mb-4 title">Приложение для Ваших финансов.</h1>
+                        <p class="leading-relaxed mb-10">Это приложение создано в рамках обучения и не является
+                            настоящим продуктом.</p>
+                        <button class="btn">Скачать</button>
+                    </div>
+
+                    <div class="md:w-1/2">
+                        <img src="./images/home.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="bg-color-primary-light">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Наше будущее</h4>
+                    <h1 class="title">Начни вкладывать сегодня и получу прибыль уже завтра.</h1>
+                </div>
+
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
+                    <div
+                        class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-calendar-days text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Отслеживание расходов</h3>
+                        <p class="leading-relaxed">Вы можете просматривать свои траты.</p>
+                    </div>
+
+                    <div
+                        class="bg-color-primary-dark border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-calendar-days text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Отслеживание расходов</h3>
+                        <p class="leading-relaxed">Вы можете просматривать свои траты.</p>
+                    </div>
+
+                    <div
+                        class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+                            <i class="fa-solid fa-calendar-days text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Отслеживание расходов</h3>
+                        <p class="leading-relaxed">Вы можете просматривать свои траты.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="saving-money">
+            <div class="container py-20 relative">
+                <div class="blob1">
+                </div>
+
+                <div class="blob2">
+                </div>
+                <div class="flex flex-col items-center justify-between md:flex-row">
+                    <div class="mb-12 md:w-1/2">
+                        <img src="./images/home.png" alt="">
+                    </div>
+                    <div class="text-center md:text-left md:w-1/2 md:ml-20">
+                        <h4 class="font-bold text-color-secondary mb-4">Наше будущее</h4>
+                        <h1 class="title mb-4">Начни вкладывать сегодня и получу прибыль уже завтра.</h1>
+                        <p class="leading-relaxed mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Provident, quo ipsam.</p>
+                        <button class="btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="bg-color-primary-light">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Как это работает?</h4>
+                    <h1 class="title">Все очень просто.</h1>
+                </div>
+
+                <div class="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+                    <div class="text-center cursor-pointer">
+                        <div
+                            class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200">
+                            <p class="text-6xl">1</p>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Установить приложение</h3>
+                        <p class="leading-relaxed">Вы можете просматривать свои траты.</p>
+                    </div>
+
+                    <div class="text-center cursor-pointer">
+                        <div class="relative inline-block px-6 py-3 rounded-lg cursor-pointer bg-color-secondary">
+                            <p class="text-6xl">2</p>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Добавить профиль</h3>
+                        <p class="leading-relaxed">Вы можете просматривать свои траты.</p>
+                    </div>
+
+                    <div class="text-center cursor-pointer">
+                        <div
+                            class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200">
+                            <p class="text-6xl">3</p>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Наслаждаться функциями</h3>
+                        <p class="leading-relaxed">Вы можете просматривать свои траты.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="bg-color-primary-light">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4">Сколько будет стоить?</h4>
+                    <h1 class="title">Оформи на год и получи скидку.</h1>
+
+                    <div class="mt-5 flex items-center justify-center gap-4">
+                        <p>Месяц</p>
+                        <label class="cursor-pointer relative inline-block w-20 h-8 rounded-full">
+                            <input type="checkbox" id="toogleBtn" class="peer opacity-0 w-0 h-0">
+                            <span
+                                class="absolute top-0 left-0 right-0 bottom-0 bg-color-primary-light border border-solid border-color-gray rounded-full duration-300 before:content-[''] before:absolute before:w-6 before:h-6 before:bottom-1 before:left-1 before:rounded-full before:bg-color-white before:duration-300 peer-checked:before:translate-x-12 peer-checked:bg-color-secondary"></span>
+                        </label>
+                        <p>Год</p>
+                    </div>
+                </div>
+
+                <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="card relative h-auto w-auto">
+                        <div id="card_1_front"
+                            class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+                            <div class="relative">
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['Р'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    200<span class="text-sm font-normal tracking-widest">/рублей в месяц</span>
+                                </p>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Базовый</h3>
+                                <p class="leading-relaxed">Для тех кому нужно иметь базовый функционал</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                            </ul>
+
+                            <button class="card_btn">Начать</button>
+                        </div>
+
+                        <div id="card_1_back"
+                            class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0">
+                            <div class="relative">
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['Р'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    2090<span class="text-sm font-normal tracking-widest">/рублей в год</span>
+                                </p>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Базовый</h3>
+                                <p class="leading-relaxed">Для тех кому нужно иметь базовый функционал</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                            </ul>
+
+                            <button class="card_btn">Начать</button>
+                        </div>
+                    </div>
+
+                    <div class="card relative h-auto w-auto">
+                        <div id="card_2_front"
+                            class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+                            <div class="relative">
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['Р'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    200<span class="text-sm font-normal tracking-widest">/рублей в месяц</span>
+                                </p>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Базовый</h3>
+                                <p class="leading-relaxed">Для тех кому нужно иметь базовый функционал</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                            </ul>
+
+                            <button class="card_btn">Начать</button>
+                        </div>
+
+                        <div id="card_2_back"
+                            class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0">
+                            <div class="relative">
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['Р'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    2090<span class="text-sm font-normal tracking-widest">/рублей в год</span>
+                                </p>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Базовый</h3>
+                                <p class="leading-relaxed">Для тех кому нужно иметь базовый функционал</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                            </ul>
+
+                            <button class="card_btn">Начать</button>
+                        </div>
+                    </div>
+                    <div class="card relative h-auto w-auto">
+                        <div id="card_3_front"
+                            class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+                            <div class="relative">
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['Р'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    200<span class="text-sm font-normal tracking-widest">/рублей в месяц</span>
+                                </p>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Базовый</h3>
+                                <p class="leading-relaxed">Для тех кому нужно иметь базовый функционал</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                            </ul>
+
+                            <button class="card_btn">Начать</button>
+                        </div>
+
+                        <div id="card_3_back"
+                            class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0">
+                            <div class="relative">
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['Р'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    2090<span class="text-sm font-normal tracking-widest">/рублей в год</span>
+                                </p>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Базовый</h3>
+                                <p class="leading-relaxed">Для тех кому нужно иметь базовый функционал</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Базовый менеджмент</span>
+                                </li>
+                            </ul>
+
+                            <button class="card_btn">Начать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="footer">
+            <div class="bg-color-primary-dark relative">
+                <div class="container py-10">
+                    <div class="grid gap-10 md:grid-cols-3 pb-10">
+                        <div class="space-y-6">
+                            <h4 class="font-bold text-lg">О приложении</h4>
+                            <h4 class="font-bold text-lg">О приложении</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hLink = document.querySelectorAll('#hLink');
+        const faSolid = document.querySelector('.fa-solid');
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark');
+        })
+
+        hLink.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark');
+            })
+        })
+
+
+        const toggleBtn = document.getElementById('toogleBtn');
+
+        const card_1_front = document.querySelector("#card_1_front");
+        const card_1_back = document.querySelector("#card_1_back");
+
+        const card_2_front = document.querySelector("#card_2_front");
+        const card_2_back = document.querySelector("#card_2_back");
+
+        const card_3_front = document.querySelector("#card_3_front");
+        const card_3_back = document.querySelector("#card_3_back");
+
+        toogleBtn.addEventListener('change', () => {
+            card_1_front.classList.toggle('-rotate-y-180');
+            card_1_back.classList.toggle('rotate-y-180');
+
+            card_2_front.classList.toggle('-rotate-y-180');
+            card_2_back.classList.toggle('rotate-y-180');
+
+            card_3_front.classList.toggle('-rotate-y-180');
+            card_3_back.classList.toggle('rotate-y-180');
+        })
+    </script>
+</body>
+
+</html>
